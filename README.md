@@ -1,9 +1,9 @@
 # Jellycat Codex Pet
 
-三只可安装到 Codex 的 v2 巴塞罗小熊动画宠物。每只宠物包含 9 组工作状态动画和 16 个观察方向。
+五只可安装到 Codex 的 v2 Jellycat 灵感动画宠物。每只宠物包含 9 组工作状态动画和 16 个观察方向。
 
 > [!IMPORTANT]
-> 这是非官方、非商业的粉丝项目，与 Jellycat Limited 没有隶属、合作、赞助或认可关系。角色形象灵感来自 Jellycat 的 **Bartholomew Bear** 系列；Jellycat、Bartholomew Bear 及相关角色、商标和设计的权利归其各自权利人所有。
+> 这是非官方、非商业的粉丝项目，与 Jellycat Limited 没有隶属、合作、赞助或认可关系。角色形象灵感来自 Jellycat 的 **Bartholomew Bear**、**Peanut Penguin** 和 **Amuseables Eggplant**；相关角色、商标和设计的权利归其各自权利人所有。
 
 ## 宠物
 
@@ -31,6 +31,22 @@
 - 安装目录：`pets/bartholomew-pumpkin-codex-bear`
 - 官方形象参考：[Jellycat Bartholomew Bear Pumpkin](https://us.jellycat.com/bartholomew-bear-pumpkin/)
 
+### 花生小企鹅
+
+![花生小企鹅动作预览](preview/peanut-penguin-codex-pet.png)
+
+- Codex ID：`peanut-penguin-codex-pet`
+- 安装目录：`pets/peanut-penguin-codex-pet`
+- 官方形象参考：[Jellycat Peanut Penguin](https://us.jellycat.com/peanut-penguin/)
+
+### 茄子小伙伴
+
+![茄子小伙伴动作预览](preview/amuseables-eggplant-codex-pet.png)
+
+- Codex ID：`amuseables-eggplant-codex-pet`
+- 安装目录：`pets/amuseables-eggplant-codex-pet`
+- 官方形象参考：[Jellycat Amuseables Eggplant](https://us.jellycat.com/vivacious-vegetable-aubergine/)
+
 ## 安装
 
 把想要的宠物目录复制到 Codex 自定义宠物目录：
@@ -40,9 +56,11 @@ mkdir -p ~/.codex/pets
 cp -R pets/bartholomew-codex-bear ~/.codex/pets/
 cp -R pets/bartholomew-bathrobe-codex-bear ~/.codex/pets/
 cp -R pets/bartholomew-pumpkin-codex-bear ~/.codex/pets/
+cp -R pets/peanut-penguin-codex-pet ~/.codex/pets/
+cp -R pets/amuseables-eggplant-codex-pet ~/.codex/pets/
 ```
 
-然后重启 Codex，在宠物选择器中选择对应小熊。
+然后重启 Codex，在宠物选择器中选择对应宠物。
 
 每个可安装目录均采用相同结构：
 
@@ -59,7 +77,7 @@ pets/<pet-id>/
 - 8 × 11 atlas，单格 192 × 208 px
 - 完整精灵图尺寸：1536 × 2288 px
 - WebP RGBA 透明背景
-- 三只宠物均已通过 Codex v2 图集结构校验
+- 五只宠物均已通过 Codex v2 图集结构校验
 
 机器校验结果保存在 `qa/`。
 
