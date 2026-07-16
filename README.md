@@ -1,51 +1,76 @@
-# Bartholomew Codex Bear
+# Jellycat Codex Pet
 
-一只可安装到 Codex 的 v2 动画毛绒小熊宠物，包含 9 组工作状态动画与 16 个观察方向。
+三只可安装到 Codex 的 v2 巴塞罗小熊动画宠物。每只宠物包含 9 组工作状态动画和 16 个观察方向。
 
 > [!IMPORTANT]
-> 这是非官方、非商业的粉丝项目，与 Jellycat Limited 没有隶属、合作、赞助或认可关系。角色形象灵感来自 Jellycat 的 **Bartholomew Bear**；Jellycat、Bartholomew Bear 及相关角色、商标和设计的权利归其各自权利人所有。
+> 这是非官方、非商业的粉丝项目，与 Jellycat Limited 没有隶属、合作、赞助或认可关系。角色形象灵感来自 Jellycat 的 **Bartholomew Bear** 系列；Jellycat、Bartholomew Bear 及相关角色、商标和设计的权利归其各自权利人所有。
 
-![巴塞罗小熊动作预览](preview/contact-sheet.png)
+## 宠物
+
+### 巴塞罗小熊
+
+![巴塞罗小熊动作预览](preview/bartholomew-codex-bear.png)
+
+- Codex ID：`bartholomew-codex-bear`
+- 安装目录：`pets/bartholomew-codex-bear`
+- 官方形象参考：[Jellycat Bartholomew Bear](https://eu.jellycat.com/bartholomew-bear/)
+
+### 巴塞罗浴袍小熊
+
+![巴塞罗浴袍小熊动作预览](preview/bartholomew-bathrobe-codex-bear.png)
+
+- Codex ID：`bartholomew-bathrobe-codex-bear`
+- 安装目录：`pets/bartholomew-bathrobe-codex-bear`
+- 官方形象参考：[Jellycat Bartholomew Bear Bathrobe](https://us.jellycat.com/bartholomew-bear-bathrobe/)
+
+### 巴塞罗南瓜小熊
+
+![巴塞罗南瓜小熊动作预览](preview/bartholomew-pumpkin-codex-bear.png)
+
+- Codex ID：`bartholomew-pumpkin-codex-bear`
+- 安装目录：`pets/bartholomew-pumpkin-codex-bear`
+- 官方形象参考：[Jellycat Bartholomew Bear Pumpkin](https://us.jellycat.com/bartholomew-bear-pumpkin/)
 
 ## 安装
 
-将 `bartholomew-codex-bear` 文件夹复制到 Codex 的自定义宠物目录：
+把想要的宠物目录复制到 Codex 自定义宠物目录：
 
 ```bash
 mkdir -p ~/.codex/pets
-cp -R bartholomew-codex-bear ~/.codex/pets/
+cp -R pets/bartholomew-codex-bear ~/.codex/pets/
+cp -R pets/bartholomew-bathrobe-codex-bear ~/.codex/pets/
+cp -R pets/bartholomew-pumpkin-codex-bear ~/.codex/pets/
 ```
 
-然后重启 Codex，并在宠物选择器中选择“巴塞罗小熊”。
+然后重启 Codex，在宠物选择器中选择对应小熊。
 
-仓库中可安装的目录结构：
+每个可安装目录均采用相同结构：
 
 ```text
-bartholomew-codex-bear/
+pets/<pet-id>/
 ├── pet.json
 └── spritesheet.webp
 ```
 
-## 兼容性
+## 兼容性与质量
 
 - Codex custom pet
 - `spriteVersionNumber: 2`
 - 8 × 11 atlas，单格 192 × 208 px
 - 完整精灵图尺寸：1536 × 2288 px
 - WebP RGBA 透明背景
+- 三只宠物均已通过 Codex v2 图集结构校验
+
+机器校验结果保存在 `qa/`。
 
 ## 来源与用途
 
-- 形象来源／灵感：[Jellycat 官方 Bartholomew Bear 页面](https://eu.jellycat.com/bartholomew-bear/)
-- 项目性质：非官方粉丝创作
+- 项目性质：非官方粉丝创作，公开源文件
 - 使用范围：个人、学习、研究和其他非商业用途
 - 禁止将本项目或其素材用于销售、广告、商品化或其他商业用途
+- 公开此仓库不表示授予任何 Jellycat 角色、商标或设计的权利
 
-公开此仓库不表示授予任何 Jellycat 角色、商标或设计的权利。详细说明见 [ATTRIBUTION.md](ATTRIBUTION.md) 和 [LICENSE](LICENSE)。
-
-## 质量检查
-
-当前精灵图已通过 Codex v2 结构校验：尺寸、行列、透明像素、已用／未用单元格和 chroma 残留检查均无错误或警告。`qa/validation.json` 保存了机器校验结果。
+详细说明见 [ATTRIBUTION.md](ATTRIBUTION.md) 和 [LICENSE](LICENSE)。
 
 ## Takedown / Rights holder contact
 
